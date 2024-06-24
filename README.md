@@ -1,3 +1,6 @@
+![alt text](https://github.com/bullbatti/Simulazione_esame_server/blob/main/simulazione_esame.png?raw=true)
+
+
 # SimulazioneEsameClient
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.4.
