@@ -1,0 +1,28 @@
+<table>
+  <tr>
+    <th>Da</th>
+    <th>A</th>
+    <th>Prezzo</th>
+    <th>Persone</th>
+    <th>Camera</th>
+
+  </tr>
+
+  @for (p of prenotazioni; track $index) {
+  <tr>
+    <td>{{ p.da }}</td>
+    <td>{{ p.a }}</td>
+    <td>${{ p.prezzo }}</td>
+    
+    <td>
+      <ul>
+    @for (per of p.persone; track $index) {
+      <li>{{per.nome}} {{per.cognome}}, {{per.dataDiNascita}}</li>
+    }
+  </ul>
+  </td>
+
+  <td>{{p.camera.numero}}</td>
+  </tr>
+  }
+</table>
