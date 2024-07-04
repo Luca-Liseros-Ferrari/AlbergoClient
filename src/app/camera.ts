@@ -1,3 +1,3 @@
 export interface Camera {
-    numero: number;
+    nome: string;
 }

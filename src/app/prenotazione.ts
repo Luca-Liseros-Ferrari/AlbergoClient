@@ -1,10 +1,12 @@
 import { Camera } from "./camera";
 import { Persona } from "./persona";
+import { Albergo } from "./albergo";
 
 export interface Prenotazione {
-    da: Date;
-    a: Date;
+    dataDa: Date;
+    dataA: Date;
     prezzo: number;
-    persone: Persona[];
+    persona: Persona[];
     camera: Camera;
+    albergo: Albergo;
 }
